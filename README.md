@@ -14,6 +14,7 @@ Stan's Grocery Search Program
 * If found display the item's name, location, and description properly formatted in a the Display Label control
 * If the item is not found, inform the customer
 * When zzz is typed in the search text box the program stops
+<<<<<<< HEAD
   
 ***
 The Display Label output should resemble the following:<br>
@@ -84,3 +85,46 @@ Use this temp array to properly load `Food$(item, location, category)`
 ### DisplayLabel
 * Display only the information of the item currently selected in the DisplayListBox
 * Show properly formatted information for the selected item. (name, aisle number, category)
+=======
+***
+The Display Label output should resemble the following:
+
+**You will find Cinnamon on aisle 7 with the Spices & herbs**
+
+***
+Name program elements **exactly** as follows:
+### Files:
+StansGrocery.sln
+StansGroceryForm.vb
+SplashScreenForm.vb
+### Controls:
+SearchTextBox
+SearchButton
+DisplayComboBox
+DisplayListBox
+DiplayLabel
+TopMenuStrip
+  * File
+    * Search
+    * Exit
+  * Help
+    * About
+
+ContextMenuStrip
+  * Search
+  * Exit
+
+MainToolTip
+
+***
+
+Add the data file "Grocery.txt" to the project Resources folder.
+
+When the program starts, load the contents of the data file into a global array in the StansGroceryForm Class.
+
+  `Dim temp() As String`
+
+  `temp = Split(My.Resources.Grocery, vbNewLine)`
+
+Use this temp array to properly load `Food$(item, location, category)`
+>>>>>>> 88f790cd5f7277b86659b34678cfad690b92d46a
