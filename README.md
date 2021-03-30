@@ -4,7 +4,10 @@
 * Stan's grocery store wants to implement a search app
 * Write a program that will input items from the disk file
 * The program should load the item data into an array that will be accessed as: 
-  * `food$(item, location, category)`
+  * `food$(n,3) 'n is the number of items`
+  * `food$(n,0) '0 is the item name`
+  * `food$(n,1) '1 is the item aisle`
+  * `food$(n,2) '2 is the item category`
 * Allow Stan's customers to enter the name of an item they want to locate by either:
   * typing the item’s name in a text box
   * selecting the item from a combobox
