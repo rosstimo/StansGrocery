@@ -59,8 +59,10 @@ Name program elements **exactly** as follows:
 
   temp = Split(My.Resources.Grocery, vbNewLine)
 ```
-Use this temp array to properly load `food$(item, location, category)`
-
+Use this temp array to properly load:
+`food$(n,0) '0 is the item name`
+`food$(n,1) '1 is the item aisle`
+`food$(n,2) '2 is the item category`
 ### DisplayListBox
 * The DisplayListBox will contain only item names
 * Show only unique names (no duplicates)
