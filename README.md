@@ -52,12 +52,12 @@ Name program elements **exactly** as follows:
 
 ***
 
-* Add the data file "Grocery.txt" to the project Resources folder.<br>
-  * When the program starts, load the contents of the data file into a global array in the StansGroceryForm Class.
+* Add the data file "Grocery.txt" to the project folder.<br>
+* When the program starts, load the contents of the data file into a global array in the StansGroceryForm Class.
 ```vb
+  Dim fileName as String
   Dim temp() As String
 
-  temp = Split(My.Resources.Grocery, vbNewLine)
 ```
 Use this temp array to properly load:
 `food$(n,0) '0 is the item name`
